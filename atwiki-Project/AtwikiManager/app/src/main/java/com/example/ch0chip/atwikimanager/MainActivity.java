@@ -18,6 +18,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.directtap.DirectTap;
+
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -135,6 +137,8 @@ public class MainActivity extends ActionBarActivity
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            //new DirectTap.Starter(getActivity(), "4398d07a811a758c2891b735383c3e74ec84130501").setTestMode(true).setFullScreenOrientation(DirectTap.Starter.ORIENTATION_AUTO).start();
+            //new DirectTap.FullScreen(getActivity()).show();
             return rootView;
         }
 
